@@ -3,8 +3,16 @@ import vImage from "../assets/villaImg.jpg"
 import ReactMapGL, { Marker } from 'react-map-gl'
 import markerImg from "../assets/marker20.png"
 import Ratings from 'react-ratings-declarative'
-import { Carousel, Form,Jumbotron, Container} from 'react-bootstrap'
-
+import { Form} from 'react-bootstrap'
+import icon1 from "../assets/icons/wifi.png"
+import icon2 from "../assets/icons/barbq.png"
+import icon3 from "../assets/icons/terrace.png"
+import icon4 from "../assets/icons/tree.png"
+import icon5 from "../assets/icons/toboggan.png"
+import icon6 from "../assets/icons/kitchen.png"
+import icon7 from "../assets/icons/basketball.png"
+import icon8 from "../assets/icons/swimming.png"
+import icon9 from "../assets/icons/child.png"
 
 export default class DetailPage extends Component {
 
@@ -49,36 +57,18 @@ export default class DetailPage extends Component {
 
         let ratingAv = 3
         return (
-            <div>
-                <img
-                    className="d-block w-100"
+           <div>
+                <div className= "detalilsform">
+                    <div>
+                     
+                    <img className="villimage"
                     src={vImage}
-                    style={{ width: 600, height: 500 }}
                     alt="First slide"
                 />
-                <h1>Villa Name</h1>
-
-                <Jumbotron fluid>
-                    <Container>
-                        <h1>Fluid jumbotron</h1>
-                        <p>
-                            This is a modified jumbotron that occupies the entire horizontal space of
-                            its parent.
-    </p>
-                    </Container>
-                </Jumbotron>
-
-                <br />
-                <h2>Facilities icons</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia arcu sit amet eros congue elementum.
-                    Donec urna elit, dapibus non lacus vitae, tempor egestas tellus. Praesent eu urna vel tellus blandit blandit. Vivamus
-                    quis eros vel libero faucibus tincidunt eu sed enim. Fusce tellus dolor, bibendum id felis nec, rhoncus tempor diam.
-                    Pellentesque mollis eu nunc vitae fermentum. Proin eget semper dolor. Nullam id felis non sem dictum elementum eu quis
-                    sapien. Donec nec venenatis mauris, fringilla imperdiet lorem.
-                     Phasellus id mauris augue. Curabitur ut ligula elit. Mauris vel mi eu neque luctus varius vel sed eros.</p>
-                <h2>price</h2>
-                <br />
-                {ratingAv > 0 &&
+                </div>
+                <div style={{marginTop:"2%"}}>
+                 <h1>Villa Name</h1>
+                 {ratingAv > 0 &&
                     <Ratings
                         rating={this.state.rating}
                         widgetRatedColors="rgb(255, 209, 26)"
@@ -89,30 +79,135 @@ export default class DetailPage extends Component {
                         <Ratings.Widget widgetEmptyColor={ratingAv >= 4 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
                         <Ratings.Widget widgetEmptyColor={ratingAv >= 5 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
                     </Ratings>}
-                <br />
+                    <h3> Price</h3>
+                    <br/>
+                    <button type="button" class="btn btn-warning">Book Now</button>
+                    </div>
+                    
+                </div>
+                <br/>
+                <br/>
+              
+                
 
-                <ReactMapGL className="mapMargins" {...this.state.viewport} mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
+  
+        <div  style={{clear:"both"}}>
+            <div className="label1">
+                <h5 style={{float:"left", marginLeft:"10px"}}>Facilities</h5> 
+            </div>
+         <div className="facilities">
+
+              <div>  <img className="icon" src={icon1}/></div>
+                <div> <img className="icon" src={icon2}/></div>
+             <div><img className="icon" src={icon3}/></div>
+                <img className="icon" src={icon4}/>
+                <img className="icon" src={icon5}/>
+                <img className="icon" src={icon6}/>
+                <img className="icon" src={icon7}/>
+                <img className="icon" src={icon8}/>
+                <img className="icon" src={icon9}/> 
+                
+                </div>
+                </div>
+                <div  style={{clear:"both"}}>
+                    <div className="label1">
+                    <h5 style={{float:"left", marginLeft:"10px"}}> Description</h5>
+                    </div>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia arcu sit amet eros congue elementum.
+                    Donec urna elit, dapibus non lacus vitae, tempor egestas tellus. Praesent eu urna vel tellus blandit blandit. Vivamus
+                  quis eros vel libero faucibus tincidunt eu sed enim. Fusce tellus dolor, bibendum id felis nec, rhoncus tempor diam.
+               Pellentesque mollis eu nunc vitae fermentum. Proin eget semper dolor. Nullam id felis non sem dictum elementum eu quis
+                   sapien. Donec nec venenatis mauris, fringilla imperdiet lorem.
+                    Phasellus id mauris augue. Curabitur ut ligula elit. Mauris vel mi eu neque luctus varius vel sed eros.</p>
+
+
+
+                </div>
+                <div  style={{clear:"both"}}>
+                    <div className="label1">
+                    <h5 style={{float:"left", marginLeft:"10px"}}> Location</h5>
+                    </div>
+                    <ReactMapGL className="mapMargins" {...this.state.viewport} mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
                     onViewportChange={(viewport) => this.setState({ viewport })}>
                     <Marker latitude={21.6394345} longitude={39.1322110} offsetLeft={0} offsetTop={0} >
-                        {/* offsetLeft={-20} offsetTop={-10}  */}
+                       
                         <img src={markerImg} />
                     </Marker>
-                    {/* <Marker
-                        coordinates={[37.78, -122.41]}
-                        anchor="bottom">
-                        <img src={markerImg} />
-                    </Marker> */}
+                   
                 </ReactMapGL>
+                </div>
+                <div  style={{clear:"both"}}>
+                    <div className="label1">
+                    <h5 style={{float:"left", marginLeft:"10px"}}> Reviews</h5>
+                    </div>
+                    <br/>
+                <div class="card">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                </div>
+               
+                </div>
+                <div  style={{clear:"both"}}>
+                    <div className="label1">
+                    <h5 style={{float:"left", marginLeft:"10px"}}>Add Reviews</h5>
+                    </div>
+                  <div style={{ width:"60%", marginLeft:"5px"}}>
+                    <Form.Control  style={{ height:"150px"}} as="textarea" rows="2" size='sm' onChange={this.inputChange.bind(this)} />
+               <input onClick={this.postreview.bind(this)} type="button" value="submit" />
+               </div>
+                </div>
+                
+                
 
-                <h2>Add review</h2>
-                <Form.Control as="textarea" rows="3" onChange={this.inputChange.bind(this)} />
-                <input onClick={this.postreview.bind(this)} type="button" value="submit" />
-                {/* {this.state.reviews != null && this.state.reviews.map((item)=>{return <Reviewcards data={item} />})}  */}
 
-                <h2>book it button</h2>
+            </div> 
+
+   
+    //             <br />
+    //             <h2>Facilities icons</h2>
+    //             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia arcu sit amet eros congue elementum.
+    //                 Donec urna elit, dapibus non lacus vitae, tempor egestas tellus. Praesent eu urna vel tellus blandit blandit. Vivamus
+    //                 quis eros vel libero faucibus tincidunt eu sed enim. Fusce tellus dolor, bibendum id felis nec, rhoncus tempor diam.
+    //                 Pellentesque mollis eu nunc vitae fermentum. Proin eget semper dolor. Nullam id felis non sem dictum elementum eu quis
+    //                 sapien. Donec nec venenatis mauris, fringilla imperdiet lorem.
+    //                  Phasellus id mauris augue. Curabitur ut ligula elit. Mauris vel mi eu neque luctus varius vel sed eros.</p>
+    //            
+    //             <br />
+    //             {ratingAv > 0 &&
+    //                 <Ratings
+    //                     rating={this.state.rating}
+    //                     widgetRatedColors="rgb(255, 209, 26)"
+    //                 >
+    //                     <Ratings.Widget widgetEmptyColor={ratingAv >= 1 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
+    //                     <Ratings.Widget widgetEmptyColor={ratingAv >= 2 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
+    //                     <Ratings.Widget widgetEmptyColor={ratingAv >= 3 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
+    //                     <Ratings.Widget widgetEmptyColor={ratingAv >= 4 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
+    //                     <Ratings.Widget widgetEmptyColor={ratingAv >= 5 ? "rgb(255, 209, 26)" : "rgb(203,211,227)"} />
+    //                 </Ratings>}
+    //             <br />
 
 
-            </div>
-        )
-    }
+
+    //             <h2>Add review</h2>
+    //             <Form.Control as="textarea" rows="3" onChange={this.inputChange.bind(this)} />
+    //             <input onClick={this.postreview.bind(this)} type="button" value="submit" />
+                
+
+    //             <h2>book it button</h2>
+
+
+        )   
+        }
 }

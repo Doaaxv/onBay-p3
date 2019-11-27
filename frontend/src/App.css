@@ -148,4 +148,47 @@ form {
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
     }
+  .detalilsform{
+    margin-top: 2%;
+    float: left;
+   
+ 
+  }
+  .villimage{
+    width: 50%;
+    height: 50%;
+    margin-left: 5px;
+    float: left;
+    border-radius: 3px;
+  }
+  .icon{
+    width: 3%;
+    height: 3%;
+    float: left;
+    margin-left: 7%;
+  }
+  .facilities{
+   width: 100%;
+    float:left;
+    border:#eff3f6 solid .5px;
+    margin: 0;
+  
+
+  }
+  .label1{
+    
+    background-color: #eff3f6;
+    width: 100%;
+    height: 30px;
+    
+  }
+  
+  a{
+    display: inline;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+  
+  }
 /* --------- End Nada Style ----------- */

@@ -11,9 +11,9 @@ export default class CustomTables extends Component {
       <div >
         
         <Image className="home-img" src={require('../assets/villa2-pic.jpg')} style={{
-          maxWidth: "100%"}} />
+          maxWidth: "100%", opacity:" 0.5"}} />
         
-        <br />
+       
         <SearchBar />
         <CardDeck className="custom-card mt-3" >
           <Card>
