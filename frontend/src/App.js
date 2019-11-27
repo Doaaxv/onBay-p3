@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, BrowserRouter, Switch, withRouter } from 'react-router-dom'
-// import './App.css';
+import './App.css';
 import Home from './components/Home'
 import CustomNavbar from './components/CustomNavbar'
 import OwnerLogin from './components/OwnerLogin'
@@ -11,6 +11,7 @@ import CustomerLogin from './components/CustomerLogin'
 import CustomerSignUp from './components/CustomerSignUp'
 import Profile from './components/Profile'
 import DetailPage from "./components/DetailPage"
+import VillasLists from "./components/VillasLists"
 
 
 import axios from 'axios'
@@ -44,6 +45,7 @@ class App extends Component {
       <Switch>
       {/* <Route exact path="/" render={(props) => <Home {...props} response={this.state.response} />} /> */}
       <Route exact path="/" component={Home} />
+      <Route path="/DetailPage" component={DetailPage} />
       <Route path="/OwnerLogin" component={OwnerLogin} />
       <Route path="/OwnerSignUp" component={OwnerSignUp} />
       <Route path="/AddVilla" component={AddVilla} />
@@ -51,6 +53,7 @@ class App extends Component {
       <Route path="/CustomerSignUp" component={CustomerSignUp} />
       <Route path="/Results" component={SearchResults} />
       <Route path='/profile' component={Profile} />
+      <Route path='/villaslists' component={VillasLists} />
       </Switch>   
     </div>
     </BrowserRouter>

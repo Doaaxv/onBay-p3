@@ -128,7 +128,7 @@ export default class CustomTables extends Component {
                     state: { results: this.state.results }
                   }}/>
                 }
-                <div className="search-bar">
+                <div className="search-bar" style={{backgroundColor:"#F6D55C"}} >
                     <form onSubmit={this.onSubmit}>
                         <div className="form-row" >
                             <div className="form-group col-md-2">
