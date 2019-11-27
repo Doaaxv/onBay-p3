@@ -27,7 +27,7 @@ onSubmitHandelr =(e)=>{
 
         return (
            <div className= "formcontainer">
-                <div className="top">SIGN UP</div>
+                <div className="top">EDIT PROFILE</div>
             <div className="form">
              <Form onSubmit ={this.onSubmitHandelr}>
                 
@@ -50,19 +50,17 @@ onSubmitHandelr =(e)=>{
                      onChange = {this.onChangHandler}/>
                  </Form.Group>
                  
-                 {/* <Form.Group controlId="formBasicEmail">
-                     <Form.Control type="email" placeholder="re-Emial" />
-                 </Form.Group> */}
-
-                 <Form.Group controlId="formBasicPassword">
-                    <Form.Control type="password" placeholder="Password" name ="password" 
-                     onChange = {this.onChangHandler}/>
-                </Form.Group>
-             
               
-              <button className="btnn"  type="submit" style={{width:"90px"}}>
-                 SING UP
+
+                <div >
+                <button className="btnn"  type="submit" style={{width:"200px"}}>
+                  CHANGE PASSWORD
                 </button>
+                <button className="btnn"  type="submit">
+                  EDIT
+                </button>
+               
+                </div>
              </Form>   
             </div>
             </div>

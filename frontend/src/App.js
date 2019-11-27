@@ -12,10 +12,15 @@ import CustomerSignUp from './components/CustomerSignUp'
 import Profile from './components/Profile'
 import DetailPage from "./components/DetailPage"
 import VillasLists from "./components/VillasLists"
+import EditProfile from "./components/EditProfile"
+import EditVill from "./components/EditVilla"
+
 
 
 import axios from 'axios'
 import dotenv from 'dotenv';
+import AdminLogin from './components/AdminLogin';
+import NewVilla from './components/NewVilla';
 dotenv.config();
 
 
@@ -48,12 +53,15 @@ class App extends Component {
       <Route path="/DetailPage" component={DetailPage} />
       <Route path="/OwnerLogin" component={OwnerLogin} />
       <Route path="/OwnerSignUp" component={OwnerSignUp} />
-      <Route path="/AddVilla" component={AddVilla} />
       <Route path="/CustomerLogin" component={CustomerLogin} />
       <Route path="/CustomerSignUp" component={CustomerSignUp} />
       <Route path="/Results" component={SearchResults} />
       <Route path='/profile' component={Profile} />
+      <Route path='/editprofile' component={EditProfile} />
       <Route path='/villaslists' component={VillasLists} />
+      <Route path='/newvilla' component={NewVilla} />
+      <Route path='/Editvilla' component={EditVill} />
+    
       </Switch>   
     </div>
     </BrowserRouter>

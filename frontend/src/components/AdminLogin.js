@@ -21,12 +21,9 @@ export default class AdminLogin extends Component {
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
                 
-                <div className="btnn">
-                <Button variant='secondary' type="submit">
-                   LOG IN
-                </Button>
-             
-                </div>
+                <button className="btnn"  type="submit">
+                LOG IN
+                </button>
              </Form>
                             
             </div>

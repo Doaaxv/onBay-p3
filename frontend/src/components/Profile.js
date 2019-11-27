@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
-
 class Profile extends Component {
   constructor() {
     super()
@@ -14,11 +13,9 @@ class Profile extends Component {
   }
   componentDidMount() {
     console.log("profile");
-    
     const token = localStorage.usertoken
     if(token){
       const decoded = jwt_decode(token)
-    
     console.log(decoded)
     console.log(this.state.first_name);
     // console.log("fffffff");
@@ -26,7 +23,6 @@ class Profile extends Component {
     }else{
       this.props.history.push('/CustomerLogin')
     }
-    
   }
   render() {
     return (
@@ -52,6 +48,10 @@ class Profile extends Component {
               <tr>
                 <td>Phone Number</td>
                 <td>{this.state.phoneNumber}</td>
+              </tr>
+              <tr>
+                <td>EDIT PROFILE</td>
+                <td><div class="button_cont" align="center"><a class="example_a" href="/ChangePassword" target="_blank" rel="nofollow noopener">Change Password</a></div></td>
               </tr>
             </tbody>
           </table>

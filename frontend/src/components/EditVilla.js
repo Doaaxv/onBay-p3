@@ -165,28 +165,11 @@ export default class NewVilla extends Component {
   ))}
 
 </Form>
-<div>
-
-<form >
-<div id="upload">
-<div className="custom-file">
-  <input style={{width:"50%"}} type="file" id="customFile"  multiple/>
-  <label class="custom-file-label" htmlFor="customFile">Choose file</label>
-  </div>
-  <div>
-  <input type="submit" value="Upload"  />
-  </div>
-
-</div>
-</form>  
-
-   
-
-</div>       
+       
             
             
             <button className="btnn" type="submit">
-               ADD
+               EDIT
             </button>
          
            

@@ -35,12 +35,12 @@ export default class OwnerLogin extends Component {
                         onChange={this.onChangeHandler}  />
                 </Form.Group>
                 
-                <div className="btnn">
-                <Button variant='secondary' type="submit">
-                   LOG IN
-                </Button>
+               
+                <button className="btnn"  type="submit">
+                  LOG IN
+                </button>
              
-                </div>
+              
              </Form>
                             
             </div>

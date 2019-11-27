@@ -62,11 +62,11 @@ onSubmitHandelr =(e)=>{
                 {/* <Form.Group controlId="formBasicPassword">
                     <Form.Control type="password" placeholder=" re-Password" />
                 </Form.Group> */}
-                <div className="btnn">
-                <Button variant='secondary' type="submit">
-                   Sign Up
-                </Button>
-                </div>
+              
+                <button className="btnn"  type="submit">
+                 SING UP
+                </button>
+             
              </Form>   
             </div>
             </div>

@@ -42,17 +42,16 @@ export default class AddVilla extends Component {
                  
                  <Form.Group controlId="formBasicPassword">
                     <Form.Control type="password" placeholder="Password" name="password" 
-                        onChange={this.onChangeHandler}  />
+                        onChange={this.onChangeHandler} />
                 </Form.Group>
                 
-                <div className="btnn">
-                <Button variant='secondary' type="submit">
-                   LOG IN
-                </Button>
-                </div>
+                <button className="btnn"  type="submit" style={{width:"90px"}}>
+               LOG IN
+                </button>
                 <Form.Group>
-                    <br/>
-                <div>Don’t have an account? <Nav.Link href="/OwnerSignUp"><Button variant="link"> Sign Up </Button></Nav.Link></div>
+                  
+                <div>Don’t have an account? <Nav.Link href="/OwnerSignUp">
+                    <Button variant="link" style={{width:"90px"}}> Sign Up </Button></Nav.Link></div>
                 </Form.Group>
              </Form>
                             

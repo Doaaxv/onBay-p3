@@ -128,7 +128,7 @@ export default class CustomTables extends Component {
                     state: { results: this.state.results }
                   }}/>
                 }
-                <div className="search-bar" style={{backgroundColor:"#F6D55C"}} >
+                <div className="search-bar" style={{backgroundColor:"#16174b", marginTop:"-10%" }} >
                     <form onSubmit={this.onSubmit}>
                         <div className="form-row" >
                             <div className="form-group col-md-2">
@@ -176,10 +176,9 @@ export default class CustomTables extends Component {
                             <div className="form-group col-md-2">
                                 <label className="hide-chr"> - </label>
                                 <div>
-                                    <button type="submit" className="btn btn-dark search-btn"
-                                    //(5-imp)
-
-                                    >Search</button>
+                                <button className="btnn"  type="submit">
+                                    SERCH
+                                 </button>
                                 </div>
                             </div>
                         </div>
