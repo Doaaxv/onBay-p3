@@ -1,12 +1,16 @@
-### Project Title
+## Project Title
 
 Shalihat
 
-### Description
+## project link
+
+https://project3-shalihat.herokuapp.com/
+
+## Description
 
 Shalihat is a web application that allows a customer to search for a villa for daily reservations.
 
-### Technologies and libraries
+## Technologies and libraries
 
 ```
 Frontend:
@@ -24,7 +28,7 @@ cors
 jsonwebtoken
 ```
 
-### Wireframes
+## Wireframes
 
 #### Main pages
 
@@ -34,7 +38,7 @@ jsonwebtoken
 
 ![SchemaRelation](./schemasRelation.png)
 
-### User stories
+## User stories
 
 - As a customer I would like to search for avilable villas.
 - As a customer/owner I would like to register and login.
@@ -44,7 +48,7 @@ jsonwebtoken
 - As a customer I would like to book a villa.
 - As a customer I would like to delete a booking.
 
-### Planning and development process
+## Planning and development process
 
 - ##### pre-project week work
 
@@ -66,11 +70,11 @@ jsonwebtoken
     - frontend
     - Image upload
 
-### Problem-solving strategy
+## Problem-solving strategy
 
 Console.log() and inspect from the web browser
 
-### Unsolved problems
+## Unsolved problems
 
 we didn't add validation on all forms.
 
@@ -78,11 +82,11 @@ we had problems with uploading the image, so we've commented it for now.
 
 when users add review/rate it is being pushed twice in the database.
 
-### Acknowledgment 
+## Acknowledgment 
 
 We are grateful for our instructors and our classmates for their help and support.
 
-### References
+## References
 
 - [image uploading]( https://www.settletom.com/blog/uploading-images-to-mongodb-with-multer )
 
